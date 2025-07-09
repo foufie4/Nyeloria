@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/pagestyle.css" />
+    <title>Nyeloria inachevée</title>
+</head>
+<body>
+    <header>
+        <h1>Nyeloria</h1>
+    </header>
+    
+    <div class="reading-wrapped">
+        <div class="manuscript-page">
+            <h2 class="titre">Ⅰ</h2>
+            <div class="page-content">
+                <p class="writiwrite">
+                    - Je vous souhaite une belle et douce journée, Madame.<br />
+                    déclara Hilda en reprenant son chemin, remarquant que Brömvar avait continué sans l'attendre.<br />
+                    - Que les étoiles vous gardent, ma petite.<br />
+                    murmura Madame Bytrichka en se berçant doucement, le regard tourné vers le ciel.<br />
+                    En arrivant au chalet numéro 4, Hilda monta les escaliers en bois sombre jusqu'au parvis.<br />La porte était déjà entrouverte ; Brömvar, rentré avant elle, ne l'avait pas attendue une seconde.<br />Avec soin, elle ferma la porte à clé, à double tour.<br />
+                    C'était leur quotidien depuis quatre ans qu'ils vivaient ensemble au Don-Moiré.<br />Le train de vie qu'ils avaient adopté semblait ne satisfaire qu'une seule personne.<br />
+                    Déposant son panier en osier sur la table de la cuisine, Hilda s'attela à ranger les achats du marché : des oeufs frais, du fromage, de la charcuterie, des fruits et du lait, tout artisanal et soigneusement sélectionné.<br />
+                    Pendant ce temps, Brömvar était déjà à l'étage, absorbé par son ordinateur. <br />C'était devenu une habitude : lui travaillant, elle seule en bas, à entretenir leur quotidien.<br />
+                    Malgé cette distance croissante, Hilda continuait de répéter les mêmes gestes.<br />Elle s'accrochait à ce rituel simple, comme si cela pouvait suffire à maintenir leur lien.<br />Elle aimait toujours profondément Brömvar, mais une mélancolie sourde s'installait en elle, jour après jour.<br />
+                    Ce matin-là, en préparant le déjeuner, elle traînait des pieds.<br />Une boule invisile pesait sur son coeur, sans qu'elle sache vraiment pourquoi. Le vide semblait s'étendre là où, autrefois, régnait la joie.<br />
+                    Elle versa malgé elle quelques larmes silencieuses en finissant de cuisiner ses pâtes à la crème.<br />
+                    - Bröm ! A table, le repas est prêt !<br />
+                    appela-t-elle, sa voix s'élevant dans l'escalier.<br />
+                    Elle s'installa seule au salon avec son assiette.<br />Elle savait qu'apporter l'assiette de Brömvar à table serait futile : il mettrait tant de temps à descendre que tout serait froid, et ce serait alors "de sa faute" à elle.</p>
+            </div>
+            <div class="page-navigation">
+                <button id="prevPage">Page précédente</button>
+                <span>Page 4 sur 5</span>
+                <button id="nextPage">Page suivante</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="comments-section">
+        <h3>Commentaires</h3>
+        <textarea placeholder="Écrire un commentaire..."></textarea>
+        <button>Envoyer</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Nyeloria. Tous droits réservés.</p>
+    </footer>
+
+       <script>
+        document.getElementById('prevPage').onclick = () => {
+            window.location.href = '/chapter1/chapt1p3.html';
+        };
+
+        document.getElementById('nextPage').onclick = () => {
+            window.location.href = '/chapter1/chapt1p5.html';
+        };
+    </script>
+</body>
+</html>

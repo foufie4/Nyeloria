@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/pagestyle.css" />
+    <title>Nyeloria inachevée</title>
+</head>
+<body>
+    <header>
+        <h1>Nyeloria</h1>
+    </header>
+    
+    <div class="reading-wrapped">
+        <div class="manuscript-page">
+            <h2 class="titre">Ⅰ</h2>
+            <div class="page-content">
+                <p class="writiwrite">
+                    Hilda, grande amoureuse de la nature, trouvait dans les paysages de sapins, de montagnes et de ciels changeants un apaisement profond, précieux pour son âme anxieuse depuis l'enfance.<br />
+                    Brömvar, lui, avait choisi de s'établir ici par amour pour elle.<br />
+                    C'était en ce lieu qu'ils s'étaient rencontrés pour la première fois, quelques années plus tôt, malgré leur jeune âge.<br />
+                    Aujourd'hui, ils vivaient ensemble dans ce cadre ancien et magique qu'est le Don-Moiré.<br />
+                    Brömvar dirigeait une start-up de cybersécurité qu'il avait fondée avec l'aide d'Hilda.<br />
+                    Sur les chemins pavés, montant à travers les arbres en direction de l'impasse Merneguy, des milliers de feuilles colorées, emportées par le vent, formaient un tapis chatoyant, réchauffant les cœurs malgé la fraîcheur ambiante.<br />
+                    Ce froid motivait le couple à accélérer le pas.<br />
+                    L'impasse Merneguy comptait quatre chalets.<br />
+                    À son entrée se dressait celui de Madame Bytrichka, une vieille femme pleine de sagesse et de bonté.<br />
+                    Toujours souriante, elle avait le cœur sur la main, bien que le poids des années ait peu à peu marqué son corps.<br />
+                    Son chalet, le plus grand de l'impasse, était entouré d'un jardin autrefois fleuri.<br />
+                    Une immense glycine grimpait le long de la rampe d'escalier pour envelopper la rambarde du balcon, conférant un charme intemporel à l'ensemble.<br />
+                    Hélas, la fatigue de l'âge l'empêchait désormais d'en prendre soin.<br />
+                    Heureusement, Monsieur Ygg, son voisin, veillait au grain.<br />
+                    Grincheux en apparence, cet homme âgé et bourru s'avérait serviable et attentionné.<br />
+                    Toujours prêt à rendre service, il s'occupait parfois du jardin de Madame Bytrichka, bien qu'il ne le fasse jamais avec un sourire.<br />
+                    Son propre chalet abritait un trésor naturel : un immense frêne dont les branches se déployaient largement au-dessus du toit.<br />
+                    Un peu en retrait dans l'impasse se trouvait le troisième chalet, occupé par la jeune famille Verpkut, arrivée récemment.<br />
+                    Aurora, la mère, était une femme froide et distante, peu encline à sociabiliser avec les voisins.</p>
+            </div>
+            <div class="page-navigation">
+                <button id="prevPage">Page précédente</button>
+                <span>Page 2 sur 5</span>
+                <button id="nextPage">Page suivante</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="comments-section">
+        <h3>Commentaires</h3>
+        <textarea placeholder="Écrire un commentaire..."></textarea>
+        <button>Envoyer</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Nyeloria. Tous droits réservés.</p>
+    </footer>
+
+       <script>
+        document.getElementById('prevPage').onclick = () => {
+            window.location.href = '/chapter1/chapt1p1.html';
+        };
+
+        document.getElementById('nextPage').onclick = () => {
+            window.location.href = '/chapter1/chapt1p3.html';
+        };
+    </script>
+</body>
+</html>

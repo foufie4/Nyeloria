@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/pagestyle.css" />
+    <title>Nyeloria inachevée</title>
+</head>
+<body>
+    <header>
+        <h1>Nyeloria</h1>
+    </header>
+    
+    <div class="reading-wrapped">
+        <div class="manuscript-page">
+            <h2 class="titre">Ⅰ</h2>
+            <div class="page-content">
+                <p class="writiwrite">
+                    Dans le creux de l'immensité de la montagne, le Don-Moiré, se trouve un petit village d'apparence paisible, aux airs d'antan, 
+                    avec ses immenses chalets majestueux entourés de plus modestes constructions, tout aussi charmantes à contempler.<br />
+                    Seul le centre du village prend des allures touristiques lorsque vient la belle saison.<br />
+                    Ses magasins en béton et ses rues pavées s'animent alors au rythme des visiteurs.<br />
+                    C'est le début de l'automne.<br />
+                    Les touristes sont repartis, les enfants ont retrouvé le chemin de l'école, et les parents ont repris leurs routines monotones.<br />
+                    Les chemins, qu'ils serpentent en ville ou à travers les forêts environnantes, se sont apaisés, et peu à peu, la nature se pare de couleurs flamboyantes, du sol jusqu'au ciel.<br />
+                    L'air s'est rafraîchi, colorant les joues d'un rouge vif, tandis que les rues et les sentiers se couvrent de tapis de feuilles aux teintes brunes et orangées.<br />
+                    Ce matin-là, Hilda, une petite femme aux cheveux assortis à la saison, aux yeux couleur du ciel d'été, et à la peau pâle comme celle d'un nouveau-né, marchait en direction de son chalet.<br />
+                    Son sourire, à la fois doux et teinté de fausseté, illuminait son visage.<br />
+                    À ses côtés, Brömvar, son compagnon, un homme grand et fort, mais élançé, avançait d'un pas tranquille.<br />
+                    Ses longs cheveux et ses yeux évoquaient l'écorce sombre d'un vieux frêne.<br />
+                    Tous deux revenaient du marché, qui se tenait comme chaque samedi sur la grande place du village.<br />
+                    Heureux d'avoir partagé un moment à deux, ils regagnaient leur modeste chalet, niché dans une impasse légèrement en hauteur, surplombant le village.<br />
+                    Il leur fallait une bonne vingtaine de minutes de marche pour y arriver, mais cela ne les dérangeait nullement.</p>
+            </div>
+            <div class="page-navigation">
+                <button id="accPage">Retour page d'accueil</button>
+                <span>Page 1 sur 5</span>
+                <button id="nextPage">Page suivante</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="comments-section">
+        <h3>Commentaires</h3>
+        <textarea placeholder="Écrire un commentaire..."></textarea>
+        <button>Envoyer</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Nyeloria. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        document.getElementById('accPage').onclick = () => {
+            window.location.href = '/index.html';
+        };
+
+        document.getElementById('nextPage').onclick = () => {
+            window.location.href = '/chapter1/chapt1p2.html';
+        };
+    </script>
+</body>
+</html>

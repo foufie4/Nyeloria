@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/pagestyle.css" />
+    <title>Nyeloria inachevée</title>
+</head>
+<body>
+    <header>
+        <h1>Nyeloria</h1>
+    </header>
+    
+    <div class="reading-wrapped">
+        <div class="manuscript-page">
+            <h2 class="titre">Ⅰ</h2>
+            <div class="page-content">
+                <p class="writiwrite">
+                    Son mari, Mitch, un homme grand et barbu, au regard sombre, semblait porter un fardeau invisible.<br />
+                    Enfin, leur fille Eidy, pleine de vie lorsqu'elle jouait au village, devenait étrangement calme et réservée en présence de ses parents.
+                    Leur chalet, pourtant récent, tombait en désuétude.<br />
+                    Le terrain alentour, encombré de jouets cassés et de débris divers, laissait entrevoir une carcasse de voiture rongée par la rouille, où la nature avait repris ses droits.<br />
+                    Enfin, le quatrième chalet, pratiquement en face de celui de Madame Bytrichka, était celui d'Hilda et Brômvar.<br />
+                    Petit et modeste, il dégageait un charme singulier.
+                    Une vigne vierge grimpait le long de la façade, encadrant joliment portes et fenêtres.<br />
+                    Leur terrain était simple : une table et deux chaises de jardin sur le balcon, quelques géraniums, un petit rosier rouge, et trois tournesols qui, curieusement, tenaient encore debout en cette saison.<br />
+                    Rien, dans cette impasse paisible, ni dans le village qu'elle surplombait, ne laissait présager qu'une étrange histoire était en train de s'écrire, en silence, sous les pieds de chacun.<br />
+                    Arrivant à l'entrée de l'impasse Merneguy, Hilda et Brömvar croisèrent, comme à leur habitude, Madame Bytrichka, confortablement installée dans son rocking-chair sur la terrasse de son balcon.<br />
+                    - Les nouvelles sont bonnes au villages, les enfants ?<br />
+                    demanda la vieille dame avec un sourire enchanteur.<br />
+                    - Bonjour, Madame Bytrichka ! Et vous, comment allez-vous ?<br />
+                    répondit Hilda, enjouée.<br />
+                    - Oh, ma petite, à mon âge, les nouvelles ne sont pas toujours bonnes. Mais... tant que le soleil se lève encore et encore sur cette si belle nature...<br />
+                    - ... les nouvelles seront toujours bonnes.<br />
+                    termina Hilda avec un sourire.<br />
+                    Elle connaissait ce couplet par coeur.<br />
+                    La vieille dame avait tendance à se répéter, et Hilda, par habitude, complétait désormais ses phrases.</p>
+            </div>
+            <div class="page-navigation">
+                <button id="prevPage">Page précédente</button>
+                <span>Page 3 sur 5</span>
+                <button id="nextPage">Page suivante</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="comments-section">
+        <h3>Commentaires</h3>
+        <textarea placeholder="Écrire un commentaire..."></textarea>
+        <button>Envoyer</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Nyeloria. Tous droits réservés.</p>
+    </footer>
+
+       <script>
+        document.getElementById('prevPage').onclick = () => {
+            window.location.href = '/chapter1/chapt1p2.html';
+        };
+
+        document.getElementById('nextPage').onclick = () => {
+            window.location.href = '/chapter1/chapt1p4.html';
+        };
+    </script>
+</body>
+</html>
