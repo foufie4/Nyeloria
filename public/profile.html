@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style/auth.css" />
+  <title>Mon profil</title>
+</head>
+<body>
+  <div class="auth-wrapper">
+    <h2>Mon profil</h2>
+    <div id="profile-info">
+      <p><strong>Pseudo :</strong> <span id="pseudo">...</span></p>
+      <p><strong>Chapitre en cours :</strong> <span id="chapter">...</span></p>
+      <p><strong>Page actuelle :</strong> <span id="page">...</span></p>
+      <p><strong>Prochain déblocage :</strong> <span id="unlock">...</span></p>
+    </div>
+    <a href="/auth/logout">Se déconnecter</a>
+  </div>
+
+  <script>
+    fetch('/profile')
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById('pseudo').innerText = data.pseudo;
+        document.getElementById('chapter').innerText = data.currentChapter;
+        document.getElementById('page').innerText = data.currentPage;
+        document.getElementById('unlock').innerText = data.nextUnlock ? new Date(data.nextUnlock).toLocaleString() : 'Aucun délai';
+      });
+  </script>
+</body>
+</html>

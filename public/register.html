@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/auth.css">
+    <title>Créer un compte</title>
+</head>
+<body>
+    <div class="auth-wrapper">
+        <h2>Créer un compte</h2>
+        <form action="/auth/register" method="POST">
+            <input type="text" name="pseudo" placeholder="Pseudo" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="password" name="password" placeholder="Mot de passe" required />
+            <button type="submit">S'inscrire</button>
+        </form>
+        <p>Déjà un compte ? <a href="login.html">Connectez-vous</a></p>
+    </div>
+</body>
+</html>
